@@ -6,7 +6,7 @@
 
 #include <stdio.h>
 #include "statistics.h"
-#include <math.h>
+#include "output_array.h"
 
 int main(void)
 {
@@ -20,30 +20,29 @@ int main(void)
 	int n2 = sizeof(a2) / sizeof(a2[0]);
 	int n3 = sizeof(a3) / sizeof(a3[0]);
 
-	double diff1 = fabs(max_array(a1, n1) - min_array(a1, n1));
-	double diff2 = fabs(max_array(a2, n2) - min_array(a2, n2));
-	double diff3 = fabs(max_array(a3, n3) - min_array(a3, n3));
-	
+	output_array(a1, n1);	
 	printf("the average is : %f\n", average_array(a1, n1));
 	printf("the std is : %f\n", std_array(a1, n1));
 	printf("the sum is : %f\n", sum_array(a1, n1));
 	printf("the max is : %f\n", max_array(a1, n1));
 	printf("the min is : %f\n", min_array(a1, n1));
-	printf("the difference is : %f\n", diff1);
+	printf("the difference is : %f\n", diff(a1, n1));
 
+	output_array(a2, n2);
 	printf("the average is : %f\n", average_array(a2, n2));
 	printf("the std is : %f\n", std_array(a2, n2));
 	printf("the sum is : %f\n", sum_array(a2, n2));
 	printf("the max is : %f\n", max_array(a2, n2));
 	printf("the min is : %f\n", min_array(a2, n2));
-	printf("the difference is : %f\n", diff2);
+	printf("the difference is : %f\n", diff(a2, n2));
 
+	output_array(a3, n3);
 	printf("the average is : %f\n", average_array(a3, n3));
 	printf("the std is : %f\n", std_array(a3, n3));
 	printf("the sum is : %f\n", sum_array(a3, n3));
 	printf("the max is : %f\n", max_array(a3, n3));
 	printf("the min is : %f\n", min_array(a3, n3));
-	printf("the difference is : %f\n", diff3);
+	printf("the difference is : %f\n", diff(a3, n3));
 
 	return 0;
 }

@@ -53,3 +53,8 @@ double min_array(double arr[], int n)
 	}
 	return min;
 }
+
+double diff(double arr[], int n)
+{
+	return fabs(max_array(arr, n) - min_array(arr, n));
+}

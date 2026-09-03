@@ -1,8 +1,7 @@
 //Comment to add space
-//Block of Comments As for the AI documentation used Claude to help debug getting git to work
-//as well as working throgh syntax errors from habbit writing java code then tansfering over here
-//Claude only helped point out that my average array could be shortedned to this current function you see
-//I had it as a full sum array and then the averaging
+//Just a block of print statments calling the array functions and doing different things with them
+//like getting the size nothing really of not compared to assignment1 same old claude for making
+//making sure im not making any syntax errors and understanding c++ error codes
 
 #include <stdio.h>
 #include "statistics.h"

@@ -1,6 +1,6 @@
 #include "statistics.h"
 #include <math.h>
-
+//same methods from assignment1
 double sum_array(double arr[], int n)
 {
         double total = 0.0;
@@ -27,7 +27,7 @@ double std_array(double arr[], int n)
         }
         return sqrt(total / n);
 }
-
+//new methods for finding the max in an array
 double max_array(double arr[], int n)
 {
 	double max = arr[0];
@@ -53,7 +53,7 @@ double min_array(double arr[], int n)
 	}
 	return min;
 }
-
+//finding the difference of the max and min
 double diff(double arr[], int n)
 {
 	return fabs(max_array(arr, n) - min_array(arr, n));
